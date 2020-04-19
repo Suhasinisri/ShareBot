@@ -7,7 +7,7 @@ $link = isset($_REQUEST['link']) ? $_REQUEST['link'] : null;
 
 if (!is_null($link)) {
     header('Content-Type: application/json');
-     echo json_encode(send_link($bot, $link, $content),JSON_PRETTY_PRINT);
+    echo json_encode(send_link($link), JSON_PRETTY_PRINT);
 
     die();
 }
