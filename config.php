@@ -13,7 +13,7 @@ $bot = new Telegram(TOKEN);
 $content = array();
 $content['chat_id'] = CHANNEL_ID;
 $content['text'] = '';
-$content['disable_notification']=true;
+$content['disable_notifications']=true;
 function send_link($bot,$link,$content) {
     $content['text'] = $link;
     return $bot->sendMessage($content);
