@@ -1,5 +1,6 @@
 <?php
-
+require "Telegram.php";
+require "TelegramErrorLogger.php";
 $configFile = file_get_contents(__DIR__.'/cereditional.json');
 $config = json_decode($configFile);
 $token = $config->token;
