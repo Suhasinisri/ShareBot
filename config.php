@@ -10,11 +10,11 @@ define("TOKEN", $token);
 define("CHANNEL_ID", $chnl_id);
 
 $bot = new Telegram(TOKEN);
-$content = array();
-$content['chat_id'] = CHANNEL_ID;
-$content['disable_notification'] = true;
-$content['text'] = '';
-
+$content = array(
+    'chat_id' => CHANNEL_ID,
+    'text' => '',
+    'disable_notification' => true
+);
 function send_link($link)
 {
     global $content;
